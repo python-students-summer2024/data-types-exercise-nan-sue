@@ -53,7 +53,7 @@ def calculate_miles_per_gallon():
     gas_used = input("Gas used(gallons): ")
     calculation_of_miles_per_gallon = int(miles_driven) / int(gas_used)
     two_decimal = format(calculation_of_miles_per_gallon, '.2f')
-    output_message = "Miles per gallon: " + str(two_decimal)
+    output_message = "Miles per gallon: " + two_decimal
     print(output_message)
 
 calculate_miles_per_gallon()
