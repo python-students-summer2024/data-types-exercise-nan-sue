@@ -15,7 +15,7 @@ def calculate_profit():
     number_of_sales = float(question_of_sales)
     profit = number_of_sales * 0.23
     two_decimal = format(profit, '.2f')
-    output_message = "Profit: $" + str(two_decimal)
+    output_message = "Profit: $" + two_decimal
     print(output_message)
 
 
@@ -35,7 +35,7 @@ def calculate_quotient_and_remainder():
     output_message = number_2 + " goes into " + number_1 + " a total of " + str(quotient) + " times with a remainder of " + str(remainder)
     print(output_message)
 
-calculate_quotient_and_remainder()
+
 
 
 def calculate_miles_per_gallon():
@@ -51,12 +51,11 @@ def calculate_miles_per_gallon():
     """
     miles_driven = input("Miles driven: ")
     gas_used = input("Gas used(gallons): ")
-    calculation_of_miles_per_gallon = int(miles_driven) / int(gas_used)
+    calculation_of_miles_per_gallon = float(miles_driven) / float(gas_used)
     two_decimal = format(calculation_of_miles_per_gallon, '.2f')
     output_message = "Miles per gallon: " + two_decimal
     print(output_message)
 
-calculate_miles_per_gallon()
 
 
 def align_text():
@@ -88,6 +87,11 @@ def align_text():
     print(output_1)
     print(output_2)
     print(output_3)
+
+calculate_profit()
+calculate_quotient_and_remainder()
+calculate_miles_per_gallon()
 align_text()
+
 
 
